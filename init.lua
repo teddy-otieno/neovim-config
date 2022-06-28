@@ -18,10 +18,11 @@ function setup_ui_config()
     o.wrap 			 = false
     o.list           = true
     o.listchars      = "eol:¬,tab:+·,trail:~,extends:>,precedes:<,space:␣,multispace:---+"
-    vim.cmd("set guifont=Victor\\ Mono:h9")
-    vim.cmd("colorscheme tokyonight")
+    vim.cmd("set guifont=Cascadia\\ Code:h10")
+    vim.cmd("colorscheme gruvbox-material")
     vim.cmd("set background=dark")
     vim.cmd("set laststatus=3")
+
 	vim.api.nvim_create_autocmd("BufEnter", {pattern={"*.tsx", "*.ts", "*.html", "*.css"}, callback=_G.space_2})
 
     vim.cmd("autocmd BufNewFile,BufRead *.fs,*.fsx,*.fsi set filetype=fsharp")
