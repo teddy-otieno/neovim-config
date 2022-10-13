@@ -100,6 +100,7 @@ packer.startup(function()
 	use {'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} }}
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'sainnhe/gruvbox-material'
+	use 'sbdchd/neoformat'
 
 	--Completions
 	use 'hrsh7th/nvim-cmp'
@@ -129,13 +130,22 @@ packer.startup(function()
 		},
 		config = config_neo_tree
 	}
+	use "lukas-reineke/indent-blankline.nvim"
 	use 'navarasu/onedark.nvim'
 	use 'elixir-editors/vim-elixir'
 	use 'zhou13/vim-easyescape'
 	use 'tomlion/vim-solidity'
 	use "lukas-reineke/lsp-format.nvim"
 	use "adelarsq/neofsharp.vim"
-  use 'folke/tokyonight.nvim'
+	use 'folke/tokyonight.nvim'
+	use { 'folke/trouble.nvim',
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function() 
+      require("trouble").setup {}
+    end 
+  }
+
+  use 'marko-cerovac/material.nvim'
 end)
 
 

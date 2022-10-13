@@ -20,7 +20,13 @@ map {'n', '<Leader>fg', "<cmd>lua require('telescope.builtin').live_grep()<cr>"}
 map {'n', '<Leader>fb', "<cmd>lua require('telescope.builtin').buffers()<cr>"}
 map {'n', '<Leader>fh', "<cmd>lua require('telescope.builtin').help_tags()<cr>"}
 
--- Defx
-function defx_maps() 
-	map {'C-n', '', '<cmd>:Defx<cr>'}
-end
+map {'n', '<Leader>xx', "<cmd>TroubleToggle workspace_diagnostics<cr>"}
+map {'n', '<Leader>xd', "<cmd>TroubleToggle document_diagnostics<cr>"}
+map {'n', '<Leader>xl', "<cmd>TroubleToggle loclist<cr>"}
+map {'n', '<Leader>xq', "<cmd>TroubleToggle quickfix<cr>"}
+
+
+-- Git gutter bindings
+map {'n', 'ghs', "<cmd>GitGutterStageHunk<cr>"}
+map {'n', ']h', "<cmd>GitGutterNextHunk<cr>"}
+map {'n', '[h', "<cmd>GitGutterPrevHunk<cr>"}
