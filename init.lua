@@ -21,7 +21,7 @@ function setup_ui_config()
   o.background 	 = "dark"
   o.laststatus     = 3
 
-  vim.cmd("set guifont=Iosevka:h10")
+  vim.cmd("set guifont=Dank\\ Mono:h10")
   vim.cmd("colorscheme gruvbox-material")
 
 	vim.api.nvim_create_autocmd("BufEnter", {pattern={"*.tsx", "*.ts", "*.html", "*.css", "*.ex", "*.exs"}, callback=_G.space_2})

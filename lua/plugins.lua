@@ -146,6 +146,7 @@ packer.startup(function()
   }
 
   use 'marko-cerovac/material.nvim'
+  use 'simrat39/symbols-outline.nvim'
 end)
 
 
