@@ -32,3 +32,8 @@ map { 'n', '<Leader>xq', "<cmd>TroubleToggle quickfix<cr>" }
 map { 'n', 'ghs', "<cmd>GitGutterStageHunk<cr>" }
 map { 'n', ']h', "<cmd>GitGutterNextHunk<cr>" }
 map { 'n', '[h', "<cmd>GitGutterPrevHunk<cr>" }
+
+
+map { 'n', '<Leader>fa', "<cmd>CodeActionMenu<cr>" }
+
+map { 'n', '<Leader>ft', "<cmd>NeoTreeReveal<cr>" }
