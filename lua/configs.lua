@@ -6,4 +6,12 @@ require('indent_blankline').setup {
 }
 
 require("symbols-outline").setup {}
+require("bufferline").setup {}
+require("lspsaga").init_lsp_saga()
+require "nvim-treesitter.configs".setup {
+	highlight = {
+		enable = true,
+		additional_vim_regex_highlighting = false
+	}
+}
 --require("onedark").load()
